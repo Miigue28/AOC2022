@@ -32,7 +32,7 @@ vector<int> Read(const string & file){
     return elves;
 }
 
-int Puzzle1(vector<int> elves){
+int Puzzle1(const vector<int> & elves){
     int max = elves.at(0);
 
     for (int i = 1; i < elves.size(); i++){
@@ -43,7 +43,7 @@ int Puzzle1(vector<int> elves){
     return max;
 }
 
-int Puzzle2(vector<int> elves){
+int Puzzle2(const vector<int> & elves){
     int max1, max2, max3;
 
     max1 = Puzzle1(elves);
