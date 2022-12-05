@@ -28,7 +28,7 @@ vector<int> Read(const string & file){
             }
         }
     }
-
+    fi.close();
     return elves;
 }
 
@@ -68,7 +68,6 @@ int main(int argc, char * argv[]){
     vector<int> elves = Read(argv[1]);
 
     cout << "\nThe maximum amount of calories carried by an elf is " << Puzzle1(elves);
-
     cout << "\nThe total amount of calories carried by the top three elves is " << Puzzle2(elves);
 
     return 0;
